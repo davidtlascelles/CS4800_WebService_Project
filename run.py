@@ -1,3 +1,3 @@
 from API import app
 
-app.run(host='localhost', port=8080, debug=True)
+app.run(host='localhost', port=8000, debug=True)
