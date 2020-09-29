@@ -58,14 +58,14 @@ Access the other json keys using the following structure:
 |                |`account_age`      |*Float*          |Age of account in years                     |`4.3`
 |                |`profile_picture`  |*Boolean*        |True if user has non-default profile picture|`True`
 |`page_data`     |           
-|                |`title`            |*String*         |User's actual name                          |John Smith
-|                |`subtitle`         |*String*         |User's handle or user name                  |@john_smith
-|                |`authors`          |*List of Strings*|Date of post                                |Use ISO format: `YYYY-MM-DD`
-|                |`publisher`        |*String*         |Date and time of post                       |Use ISO format: `YYYY-MM-DDThh:mmTZD`
-|                |`publish_date`     |*ISO String*     |Age of account in years                     |`4.3`
-|                |`publish_date_time`|*ISO String*     |Age of account in years                     |`4.3`
-|                |`body`             |*String*         |True if user has non-default profile picture|`True`
-|                |`citation_urls`    |*List of Strings*|True if user has non-default profile picture|`True`
+|                |`title`            |*String*         |Title of the article                        |Breaking: World Peace Achieved
+|                |`subtitle`         |*String*         |Subtitle of the article                     |World Leaders Agree to Peace Terms
+|                |`authors`          |*List of Strings*|Authors of the article                      |John Smith, Jane Doe
+|                |`publisher`        |*String*         |Publisher of the article                    |New York Times
+|                |`publish_date`     |*ISO String*     |Publish date of the article                 |Use ISO format: `YYYY-MM-DD`
+|                |`publish_date_time`|*ISO String*     |Publish date and time of the article        |Use ISO format: `YYYY-MM-DDThh:mmTZD`
+|                |`body`             |*String*         |Contents of the article                     |Yesterday afternoon at a global summit, world leaders...
+|                |`citation_urls`    |*List of Strings*|List of urls that are linked in the article |https://www.wikipedia.org, https://www.cnn.com
         
 ### API Response from Authenticity Detection Services:
 Return a `float` confidence value between
