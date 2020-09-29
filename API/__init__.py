@@ -26,7 +26,7 @@ def index():
         content = markdown_file.read()
 
         # Convert to HTML
-        return markdown.markdown(content)
+        return markdown.markdown(content, extensions=['tables'])
 
 
 @app.route('/result')

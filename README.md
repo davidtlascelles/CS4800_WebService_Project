@@ -21,7 +21,7 @@ This API accepts POST requests as input. Use the following input `name=` paramet
 **Minimum requirement is a `url` as a *String*.**
 
 Native Apps can add the following attributes:
- 
+
 |Attribute         |Type        |Description                                      |Specification/Example                |
 |------------------|------------|-------------------------------------------------|-------------------------------------|
 |`account_name`    |*String*    |User's actual name                               |John Smith                           |
