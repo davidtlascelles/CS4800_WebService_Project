@@ -1,5 +1,5 @@
 # CS4800 Project  
-**CPP CS 4800.02 F20, Software Engineering Semester Project**
+### CPP CS 4800.02 F20, Software Engineering Semester Project
   
 ## Project Roles & Members:
  
