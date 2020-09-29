@@ -73,3 +73,5 @@ Return a `float` confidence value between
 `0` for **Fake** to `1` for **Real**
 
 For decision-tree authenticity checking services, you may use intermediate values like 0.5 to indicate uncertainty.
+
+## To request changes to or clarification about this API, please contact the Project Manager Meetkumar Patel on Discord
