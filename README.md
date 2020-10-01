@@ -66,6 +66,8 @@ Access the other json keys using the following structure:
 |                |`publish_date_time`|*ISO String*     |Publish date and time of the article        |Use ISO format: `YYYY-MM-DDThh:mmTZD`
 |                |`body`             |*String*         |Contents of the article                     |Yesterday afternoon at a global summit, world leaders...
 |                |`citation_urls`    |*List of Strings*|List of urls that are linked in the article |https://www.wikipedia.org, https://www.cnn.com
+|                |`html`             |*String*        |HTML Dump of a the webpage                  |<!doctype html><html lang="en"><head>...
+      
         
 ### API Response from Authenticity Detection Services:
 Return a `float` confidence value between

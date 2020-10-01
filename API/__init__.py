@@ -3,6 +3,8 @@ import os
 import time
 
 import markdown
+import requests
+import pprint
 
 # Import the framework
 from flask import Flask
@@ -28,11 +30,9 @@ def index():
         # Convert to HTML
         return markdown.markdown(content, extensions=['tables'])
 
-
-@app.route('/result')
-def result(score=None):
-    return render_template('resultpage.html', score=score)
-
+@app.route('/webapp')
+def webapp():
+    """"""
 
 @app.route('/', methods=['POST', 'GET'])
 def form():
@@ -52,7 +52,7 @@ def form():
             'page_data': page_data
         }
         authenticity_score = authenticity_detector(json.dumps(attribute_dict))
-        return result(authenticity_score)
+        return render_template('resultpage.html', score=authenticity_score)
     if request.method == 'GET':
         return render_template('submitpage.html')
 
@@ -71,11 +71,18 @@ def web_scraper(url):
         "publish_date": None,
         "publish_date_time": None,
         "body": None,
-        "citation_urls": None
+        "citation_urls": None,
+        "html": None
     }
 
-    # CODE GOES HERE
+    page_html = requests.get(url).content.decode().strip()
+    for line in page_html.splitlines():
+        if line.find("author") != -1:
+            print(index, ":", line)
 
+    page_data_dict["html"] = page_html
+
+    pprint.pprint(page_data_dict)
     return page_data_dict
 
 
